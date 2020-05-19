@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Computer Society of India, GITAM Student Branch.">
+    <link rel="icon" type="image/png" href="assets/brand/cubelogo.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    
+    <title>C.U.B.E VIT| Cubing Union of Brainy Enthusiasts | VIT Student Branch</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC');
+* {
+    padding: 0;
+    margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  
+  padding: 0px;
+  background:#ffffff;
+  margin:0px;
+  font-family: 'Roboto', sans-serif; 
+}
+nav{
+    display: flex;
+    /* position: fixed; */
+    justify-content: space-between;
+    align-items: center;
+    
+    background-color: black;
+    overflow: hidden;
+}
+.navbar-nav .nav-link {
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 60px;
+  line-height: 60px;
+  color: rgb(0, 0, 0); }
+  
+.navbar-nav .nav-item .nav-link{
+    font-size: large;
+}
+.logo{
+    display: flex;
+    text-transform: uppercase;
+    /* letter-spacing: 2px; */
+    font-size: 20px;
+    width: 65%;
+    margin-bottom: 1.5vh;
+}
+.index{
+    text-decoration: none;
+    outline: none;
+    color: black;
+    display: flex;
+}
+.adg-logo{
+    width: 11%; 
+    /* height: 300px;  */
+    margin-top: 1vh;
+    margin-left: 10px;
+    overflow: hidden;
+}
+.hd1{
+    margin-top: 15px;
+    margin-left: 2vh;
+    word-spacing: 3px;
+    letter-spacing: 2px;
+}
+
+
+
+.burger{
+    display: none;
+    cursor: pointer;
+    margin-right: 20px;
+}
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: #0066ff;
+    margin: 5px;
+    transition: 0.3s;
+}
+
+  
+
+ .Contact11 {
+background-color: #ffffff;
+padding-top: 110px;
+
+
+}
+.Contact11 p {
+  font-size: 30px;
+  -webkit-text-stroke: 0.8px   black;
+    color: rgb(0, 0, 0);
+  
+  text-align: center;
+  font-weight: 500;
+} 
+
+
+.Contact11 h2 {
+  font-size: 50px;
+  -webkit-text-stroke: 0.8px   black;
+    color: rgb(73, 73, 247);
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  text-transform:capitalize;
+  font-weight: 600;
+} 
+
+
+.leftcolumn {   
+  float: left;
+  width: 60%;
+  background-color: rgb(255, 255, 255);
+  padding-bottom: 20px;
+  
+}
+.input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #020202;
+  border-radius: 4px;
+  background-color:rgb(255, 255, 255);
+  margin-top: 12px;
+  color:#000000;
+}
+input[type=number], select, textarea {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid #020202;
+  border-radius: 4px;
+  resize: none;
+  background-color:rgb(255, 255, 255);
+  color: #000000;
+}
+input[type="text"]::placeholder {  
+           /* Firefox, Chrome, Opera */ 
+   text-align: left;
+   color: rgb(73, 73, 247);
+   -webkit-text-stroke: 0.3px black;
+   resize:none;
+} 
+
+label {
+  padding: 12px 12px 12px 0;
+  display:inline-block;
+}
+
+input[type=submit] {
+  background-color:rgb(74, 217, 236);
+  -webkit-text-stroke: 0.3px black;
+  color: #000000;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 10px;
+  width: 189px;
+  cursor: pointer;
+  float: left;
+  margin-top: 30px;
+  text-align: left;
+  background-image:linear-gradient(rgb(74, 217, 236),rgb(73, 73, 247)) ;
+  border: 1px solid black;
+}
+
+input[type=submit]:hover {
+    background-image:linear-gradient(rgb(67, 253, 10),rgb(39, 99, 11)) ;
+  background-position: right center;
+}
+
+
+.container {
+  border-radius: 5px;
+  background-color:#ffffff;
+  padding: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 800px;
+  height: 580px;
+  
+ margin-right: 80px;
+ margin-left: 100px;
+ color:#000000;
+ 
+ 
+}
+textarea::-webkit-input-placeholder { 
+            color:rgb(73, 73, 247); 
+            -webkit-text-stroke: 0.3px black;
+            font-size: 18px;
+            font-family: 'Roboto';
+        } 
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1080px) {
+  body{
+        overflow-x: hidden;
+    }
+    .logo{
+        width: 60%;
+        margin-right: 94px;
+    }
+    .nav{
+        width: 10%;
+    }
+    .adg-logo{
+        width: 21%; 
+        /* height: 40px;  */
+        margin-top: 2vh;
+        margin-left: 5px;
+    }
+    .hd1{
+      font-size: 15px;
+    }
+    .nav-links{
+        position: absolute;
+        right: 0px ;
+        height: 50vh;
+        top: 8vh;
+        background-color: #121212;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        transform: translate(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .nav-links a{
+        color: white;
+        text-decoration: none;
+        /* letter-spacing: 3px; */
+        font-weight: bold;
+        font-size: 15px;
+        padding: 20px 120px;
+    }
+    .burger{
+        display: block;
+    }
+    .nav-links li{
+        opacity: 0;
+    }
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 40%;
+  background-color:rgb(255, 255, 255);
+  padding-left: 20px;
+
+  
+ 
+}
+
+.nav-links .selected{
+  color: #0066ff;
+}
+
+.card {
+    background-image:linear-gradient(rgb(74, 217, 236),rgb(73, 73, 247)) ;
+  padding: 10px;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  height: 320px;
+  width: 400px;
+  margin-right: 80px;
+  margin-left: 80px;
+  border-radius: 5px;
+  border: 1px solid black;
+  
+  
+}
+
+.card p{
+ 
+  font-size: 15px;
+  color:#000000;
+  text-align: left;
+}
+.card h2{
+  color:#000000;
+  text-align: left;
+}
+
+
+::-webkit-scrollbar{
+    width: 0px;
+}
+::-webkit-scrollbar-thumb{
+    background: transparent;
+    border-radius: 6px;
+    height: 100px;
+}
+/* ::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(transparent,#00c6ff);
+} */
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translate(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translate(0px);
+    }
+}
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  
+}
+.footer{
+    width: 100%;
+    background: #121212;
+    display: block;
+}
+.inner-footer{
+    width: 95%;
+    margin: 0 auto;
+    padding: 0px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: center;
+    /* text-align: center; */
+    /* height: 32vh; */
+}
+.footer-items{
+    width: 33%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+.foot1{
+    margin-right: 80px;
+}
+/* .foot2{
+    margin-left: 10vw;
+}
+.foot3{
+    float: right;
+} */
+.aa{
+    padding: 15px 0;
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.footer-items p{
+    color: rgb(212, 209, 209);
+    font-size: 14px;
+    text-align: justify;
+    line-height: 24px;
+}
+ul{
+    list-style: none;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    margin: 0;
+}
+ul a{
+    text-decoration: none;
+    outline: none;
+    color: rgb(212, 209, 209);
+    transition: 0.3s;
+}
+ul li{
+    margin: 5px 0;
+    display: flex;
+}
+.social-media{
+    width: 100%;
+    color: rgb(212, 209, 209);
+}
+
+.social-media a{
+    text-decoration: none;
+}
+.social-media i{
+    height: 30px;
+    width: 30px;                                                                                                                                                                                                                                                                                                                                                                            
+    margin-right: 40px;
+    margin-top: 1vh;
+    color: rgb(212, 209, 209);
+    transition: 0.3s;
+    padding: 0;
+    /* display: flexbox; */
+    float: left;
+}
+.social{
+    font-size: 18px;
+    /* display: flex; */
+}
+.social li{
+    margin-bottom: 15px;
+}
+.footer-bottom{
+    padding: 10px;
+    text-align: center;
+    background: #121212;
+    color: #fff;
+    font-size: 12px;
+}
+.icons{
+    margin-left: 40px;
+}
+
+@media screen and (max-width:1080px)
+{   .head1{
+        margin: 0px;
+    }
+    .foot1{
+        margin-right: 50px;
+    }
+
+}
+@media screen and (max-width:600px)
+{
+  .adg-logo{
+        width: 40%; 
+        /* height: 300px;  */
+        margin-top: 2vh;
+        margin-left: 5px;
+    }
+    /* .footer-items{
+        width: 100%;
+        padding: 5px 20px;
+    } */
+    .footer-items:nth-child(1){
+        width: 100%;
+        padding: 0;
+    }
+    .footer-items:nth-child(2){
+        width: 50%;
+        padding: 0;
+        margin: 0;
+    }
+    .footer-items:nth-child(3){
+        width: 50%;
+        padding: 0;
+        margin: 0;
+    }
+    .icons{
+        margin-left: 20px;
+    }
+    .hd1{
+      font-size: 17px;
+        letter-spacing: 0;
+        margin-left: 10px;
+    }
+    .foot1{
+        margin-right: 0px;
+    }
+    
+}
+
+@media screen and (max-width: 1080px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100vw;
+    padding: 0;
+    align-items: center;
+    align-content: center;
+    margin: 0 0;
+    padding-bottom: 10px;
+  }
+  .card{
+    margin: 5vh 10vw;
+     width: 80vw;
+}
+
+.container{
+      margin: 3vh 10vw;
+      width: 80vw;
+}
+}
+.navbar-nav .nav-item.active .nav-link,.navbar-nav .nav-item .nav-link{
+    color:  rgb(0, 0, 0);
+    
+}
+.nav-item.active{
+  border-bottom: 2px solid rgb(248, 10, 10); }
+.navbar-nav .nav-item:hover .nav-link {
+      color: yellow;   
+  }
+
+
+@media screen and (max-width: 600px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+    align-items: center;
+    align-content: center;
+    margin: 0 ;
+  }
+  .card{
+    
+    width: 80vw;
+    
+  }
+  .nav-link {
+  border-bottom: 2px solid rgb(255, 0, 0); }
+
+  .container{
+      margin: 5vh 10vw;
+      width: 80vw;
+      
+  }
+ 
+
+ 
+}
+/*# sourceMappingURL=style.css.map */
+    </style>
+</head>
+
+<body >
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light fixed-top " style="background-image:linear-gradient(rgb(74, 217, 236),rgb(73, 73, 247)) ;">
+            <a class="navbar-brand" href="index">
+                <img src="assets/brand/cubelogo.png" width="70" height="30" class="d-inline-block align-top" alt="CUBE VIT Logo"> <span class="logo-title"></span> </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mr-auto" >
+                        <li class="nav-item" >
+                            <a  class="nav-link" href="cubeindex.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item" >
+                            <a class="nav-link" href="eventscube.html">Events</a>
+                        </li>
+                       
+                        <li class="nav-item">
+                            <a class="nav-link" href="teamcube.html">Team</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="contactcube.html">Contact</a>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav ml-auto social-icons">
+                        <li>
+                            <a href="https://www.facebook.com/c.u.b.e.VITclub/" target="_blank" class="nav-link"><i class="fa fa-facebook fa-lg"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/c.u.b.e_vit/" target="_blank" class="nav-link"><i class="fa fa-instagram fa-lg"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/company/c-u-b-e-vit/" target="_blank" class="nav-link"><i class="fa fa-linkedin fa-lg"></i></a>
+                        </li>
+                        <li>
+                            <a href="credits" class="nav-link"><i class="fa fa-info fa-lg"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="Contact11">
+            <p>Get in touch</p>
+            <h2>CONTACT US </h2>
+        </div>
+        <div class="row" style="background-color:rgb(151, 142, 142) ; ">
+            <div class="leftcolumn" >
+             <div class="container">
+            <form action="https://formspree.io/appledevelopersgroup@gmail.com" method="POST">
+            <div class="row">
+              <label class="required" for="name">   </label><br />
+              <input id="name" class="input" name="name" type="text" value="" size="50"  placeholder=" YOUR NAME " /><br />
+              <span id="name_validation" class="error_message"></span>
+            </div>
+            <div class="row">
+              <label class="required" for="email"> </label><br />
+              <input id="email" class="input" name="email" type="text" value="" size="50" placeholder=" YOUR EMAIL ID " /><br />
+              <span id="email_validation" class="error_message"></span>
+            </div>
+            <div class="row">
+                  <label class="required" for="phoneno"> </label><br />
+                  <input id="phoneno" class="input" name="phoneno" type="text" value="" size="50" placeholder=" YOUR PHONE NO " /><br />
+                  <span id="phoneno_validation" class="error_message"></span>
+                </div>
+            <div class="row">
+              <label class="required" for="message"></label><br />
+              <textarea id="message" class="input" name="message"  rows="7" cols="47.5" placeholder="YOUR MESSAGE " ></textarea><br />
+              <span id="message_validation" class="error_message"></span>
+            </div>
+              
+              <input id="submit_button" type="submit" value="SEND MESSAGE" />
+            </form>
+          </div>
+              
+            </div>
+            <div class="rightcolumn">
+              <div class="card">
+                
+                <h2> Contact Here</h2>
+                <br>
+                <p><b>Address</b></p>
+                <p>Vellore Institute Of Technology, Vellore 632014, Tamilnadu</p>
+                <p><b>Phone</b></p>
+                <p>+91 6303618891 </p>
+                <p><b>Email</b></p>
+                <p> vitcubeclub@gmail.com</p>
+              </div>
+              
+              <div class="card">
+                <h2>Additional info</h2>
+                <br>
+                <p>The Cubing Union of Brainy Enthusiasts is a non-profit professional meet to have ideas exchanged between cubers and to ameliorate the skills of cubers to help them acheive height in this feild by making them compete with the other world-class cubers!</p>
+              </div>
+            </div>
+          </div>
+          <div class="hi" id="contact-details" style="background-color: white;">
+            <div class="heya" style="text-align: center;">
+                <div class="row featurette">
+                    <div class="col-md-12">
+                        <h2 class="featurette-heading">Got some questions? <span style="color: rgb(73, 73, 247);">Get in touch.</span></h2>
+                        <br>
+                        <table class="table table-hover table-borderless">
+                            <tbody>
+                                <tr>
+                                    <td>Samarth Nehe</td>
+                                    <td><a href="tel:+917396602734">6303618891</a></td>
+                                </tr>
+                                <tr>
+                                    <td>V.J Karthik</td>
+                                    <td><a href="tel:+917330966475">9843636428</a></td>
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                </div></div>
+                <hr class="featurette-divider">
+                <footer class="heya" style="text-align: center;height: 70px;">
+                    <p>&copy; 2018-19 &mdash; Team C.U.B.E VIT, Vellore Branch &middot; </p>
+                </footer>
+            </div>
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  
+          
+        </body>
+        
+        </html>
