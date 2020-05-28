@@ -311,7 +311,7 @@ figure {
             #colorlib-hero .flexslider .slider-text > .slider-text-inner h1 {
               font-size: 28px;
             color:white;
-            -webkit-text-stroke: 1px black;} }
+            -webkit-text-stroke: 0.6px black;} }
         #colorlib-hero .flexslider .slider-text > .slider-text-inner h2 {
           font-size: 18px;
           line-height: 1.5;
