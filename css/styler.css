@@ -1042,10 +1042,12 @@ color: white; }
           font-style: 28px;
           -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
-          color: #000; }
+          color: white; 
+          -webkit-text-stroke: 0.1px black;}
         .project .desc span {
           -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0); } }
+          transform: translate3d(0, 0, 0);
+          color:white} }
   .project:hover .desc {
     opacity: 1; }
     .project:hover .desc h3 {
