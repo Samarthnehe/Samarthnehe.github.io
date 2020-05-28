@@ -314,7 +314,7 @@ figure {
           font-weight: 300;
           font-family: "Quicksand", Arial, sans-serif; }
          @media screen and (max-width: 768px) {
-            #colorlib-hero .flexslider .slider-text > .slider-text-inner h1 {
+            #colorlib-hero .flexslider .slider-text > .slider-text-inner h2 {
               font-size: 20px;
             color:white;
            -webkit-text-stroke: 0.2px black;} }
