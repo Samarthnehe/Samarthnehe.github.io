@@ -296,7 +296,7 @@ figure {
          #colorlib-hero .flexslider .slider-text > .slider-text-inner h1, #colorlib-hero .flexslider .slider-text > .slider-text-inner h2 {
           
           color: black;
-           font-family: "Playfair Display", Georgia, serif; }}
+           font-family: "Playfair Display", Georgia; }}
         #colorlib-hero .flexslider .slider-text > .slider-text-inner h1, #colorlib-hero .flexslider .slider-text > .slider-text-inner h2 {
           margin: 0;
           padding: 0;
