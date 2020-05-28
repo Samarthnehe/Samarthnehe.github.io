@@ -295,8 +295,8 @@ figure {
         @media screen and (max-width: 768px){
          #colorlib-hero .flexslider .slider-text > .slider-text-inner h1, #colorlib-hero .flexslider .slider-text > .slider-text-inner h2 {
           
-          color: black;
-           font-family: "Playfair Display", Georgia; }}
+          color: white;
+            }}
         #colorlib-hero .flexslider .slider-text > .slider-text-inner h1, #colorlib-hero .flexslider .slider-text > .slider-text-inner h2 {
           margin: 0;
           padding: 0;
@@ -311,7 +311,7 @@ figure {
             #colorlib-hero .flexslider .slider-text > .slider-text-inner h1 {
               font-size: 28px;
             color:white;
-            -webkit-text-stroke: 0.4px black;} }
+            -webkit-text-stroke: 0.3px black;} }
         #colorlib-hero .flexslider .slider-text > .slider-text-inner h2 {
           font-size: 18px;
           line-height: 1.5;
