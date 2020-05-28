@@ -231,7 +231,7 @@ figure {
       padding: 0 1em; } }
 
 #colorlib-hero {
-  min-height: 300px;
+  min-height: 200px;
   background: #fff url(../images/loader.gif) no-repeat center center;
   width: 100%;
   float: left;
