@@ -304,13 +304,20 @@ figure {
           font-weight: 700; }
           @media screen and (max-width: 768px) {
             #colorlib-hero .flexslider .slider-text > .slider-text-inner h1 {
-              font-size: 28px; } }
+              font-size: 28px;
+            color:white;
+            -webkit-text-stroke: 1px black;} }
         #colorlib-hero .flexslider .slider-text > .slider-text-inner h2 {
           font-size: 18px;
           line-height: 1.5;
           margin-bottom: 30px;
           font-weight: 300;
           font-family: "Quicksand", Arial, sans-serif; }
+         @media screen and (max-width: 768px) {
+            #colorlib-hero .flexslider .slider-text > .slider-text-inner h1 {
+              font-size: 20px;
+            color:white;
+           -webkit-text-stroke: 0.2px black;} }
           #colorlib-hero .flexslider .slider-text > .slider-text-inner h2 a {
             color: rgba(44, 152, 240, 0.8);
             border-bottom: 1px solid rgba(44, 152, 240, 0.7); }
@@ -343,6 +350,12 @@ figure {
           @media screen and (max-width: 768px) {
             #colorlib-hero .flexslider .slider-text > .slider-text-inner .btn {
               width: 100%; } }
+          @media screen and (max-width: 768px) {
+                #colorlib-hero .flexslider .slider-text > .slider-text-inner .btn.btn-learn {
+                color: rgb(255, 255, 255);
+                border: 1px solid rgb(255, 255, 255);
+                background: transparent !important; }}
+
 
 body.offcanvas {
   overflow-x: hidden; }
