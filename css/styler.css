@@ -841,6 +841,18 @@ color: white; }
       background: #4054b2; }
     .progress-bar.color-6 span {
       color: #4054b2; }
+     .progress-bar.color-7 {
+        background: #f505b9; }
+        .progress-bar.color-7:after {
+          background: #f505b9; }
+        .progress-bar.color-7 span {
+          color: #f505b9; }
+    .progress-bar.color-8 {
+        background: #00ffdd; }
+   .progress-bar.color-8:after {
+         background: #00ffdd; }
+      .progress-bar.color-8 span {
+          color: #00ffdd; }
 
 .colorlib-feature {
   text-align: left;
