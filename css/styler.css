@@ -973,7 +973,7 @@ color: white; }
       color: #2c98f0; }
 
 .project {
-  background-size: cover;
+  background-size: 100% 100%;
   background-position: center center;
   background-repeat: no-repeat;
   position: relative;
