@@ -982,7 +982,22 @@ color: white; }
   width: 100%;
   display: block;
   margin-bottom: 30px; }
+
   .project .desc {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #2c98f0;
+    opacity: 0;
+    border: 1px solid black;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
+
+    
+    .project .desc:hover {
     position: absolute;
     top: 0;
     bottom: 0;
